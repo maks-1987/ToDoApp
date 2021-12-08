@@ -1,7 +1,65 @@
 // @import '_styles.scss';
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0px 5px;
+  max-width: 400px;
+}
+
+.app-todo-list {
+  text-align: center;
+  font-size: 28px;
+}
+
+.todo-content {
+  // border: indianred 1px solid;
+  background-color: indianred;
+  padding-bottom: 10px;
+  border-radius: 10px;
+
+  &__input {
+    display: flex;
+    justify-content: center;
+
+    .task-input {
+      flex: 0 1 80%;
+    }
+
+    input {
+      padding: 2px 5px;
+      width: 100%;
+    }
   }
+
+  &__task {
+    padding: 10px 8px;
+
+    .task-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border: 2px solid #664343;
+      border-radius: 10px;
+    }
+
+    .task-unit {
+      margin-right: 10px;
+    }
+
+    input {
+      padding: 5px 10px;
+      margin-right: 10px;
+    }
+  }
+}

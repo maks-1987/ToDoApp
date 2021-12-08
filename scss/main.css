@@ -4,4 +4,73 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0px 5px;
+  max-width: 400px;
+}
+
+.app-todo-list {
+  text-align: center;
+  font-size: 28px;
+}
+
+.todo-content {
+  background-color: indianred;
+  padding-bottom: 10px;
+  border-radius: 10px;
+}
+
+.todo-content__input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.todo-content__input .task-input {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 80%;
+          flex: 0 1 80%;
+}
+
+.todo-content__input input {
+  padding: 2px 5px;
+  width: 100%;
+}
+
+.todo-content__task {
+  padding: 10px 8px;
+}
+
+.todo-content__task .task-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: 2px solid #664343;
+  border-radius: 10px;
+}
+
+.todo-content__task .task-unit {
+  margin-right: 10px;
+}
+
+.todo-content__task input {
+  padding: 5px 10px;
+  margin-right: 10px;
+}
 /*# sourceMappingURL=main.css.map */
